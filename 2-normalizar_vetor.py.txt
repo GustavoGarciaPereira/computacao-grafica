@@ -1,0 +1,16 @@
+import tamanhoVetor
+
+v = [3,4]
+vn = []
+print(tamanhoVetor.calcula_vetor(v))
+
+
+def normalizar(v):
+    tamanho_Vetor = tamanhoVetor.calcula_vetor(v)
+    for i in range(len(v)):
+        print("",v[i])
+        vn.append(v[i]/tamanho_Vetor)
+        
+    return vn
+
+print("normalizar", normalizar(v))
