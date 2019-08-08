@@ -1,0 +1,17 @@
+Desenvolva um programa que leia pelo teclado os valores x, y e z de um vetor de 3 dimensões. 
+Em seguida, apresente ao usuário um menu com as seguintes opções:
+
+(*) Calcular o tamanho do vetor;
+(*) Normalizar o vetor, apresentando o vetor resultante da normalização;
+(*) Adicionar outro vetor ao que foi lido anteriormente, lendo os valores x, y e z deste novo vetor;
+(*) Subtrair outro vetor ao que foi lido anteriormente, lendo os valores x, y e z deste novo vetor;
+(*) Ler o valor de um escalar e realizar a multiplicação do mesmo pelo vetor, mostrando o vetor resultante;
+(*) Ler o valor de um escalar e realizar a divisão do mesmo pelo vetor, mostrando o vetor resultante;
+(*) Calcular o produto escalar do vetor lido anteriormente por outro vetor, lendo os valores x, y e z deste novo vetor e mostrando o resultado na tela.
+(*) Desenvolva um programa que leia pelo teclado os valores de uma matriz 3x3, e então apresente um menu com as seguintes opções:
+
+Adição e subtração de outra matriz, lendo os valores dessa outra matriz 3x3 e mostrando o resultado na tela;
+Multiplicação e Divisão de um escalar lido pelo teclado;
+Multiplicação da matriz por um vetor de 3 elementos, este lido pelo teclado;
+Multiplicação da matriz por outra matriz 3x3, esta lida pelo teclado;
+Apresentar a transposta da matriz lida inicialmente.
