@@ -1,36 +1,14 @@
-06/08/2019 - Lista de exercícios - Matrizes de transformação 2D
+13/08/2019 - Lista de exercícios - Linhas e Círculos
+1. Desenvolva uma aplicação em que o usuário insere os pontos referentes aos vértices de um triângulo (P0, P1 e P2), e então calcule, de acordo com um dos algoritmos de rasterização de linhas, os pontos que fazem parte das arestas do triângulo especificado.
 
-1. Os seguintes pontos abaixo formam uma casa simples em duas dimensões:
+Obs: caso escolha o algoritmo de Bresenham para rasterização de linhas, será concedido + 0.5 a nota.
 
-Estrutura da casa:
-P1 (-1, -1)
-P2 (-1, 1)
-P3 (0, 2)
-P4 (1, 1)
-P5 (1, -1)
 
-Janela 1:
-P6 (-0.75, 0.25)
-P7 (-0.75, 0.75)
-P8 (-0.25, 0.75)
-P9 (-0.25, 0.25)
+2. Escolha um dos algoritmos de rasterização de círculos. Está aplicação deverá:
 
-Janela 2:
-P10 (0.25, 0.25)
-P11 (0.25, 0.75)
-P12 (0.75, 0.75)
-P13 (0.75, 0.25)
+Pedir para o usuário informar o valor do raio do círculo (r);
+Pedir para o usuário informar o ponto central do círculo;
+A partir do raio e do ponto central, gerar os pontos (x,y) que formam o círculo e apresentar os mesmos na tela.
+Obs: caso escolha o algoritmo do ponto médio para rasterização de círculos, será concedido + 0.5 a nota.
 
-Porta:
-P14 (-0.75, -1)
-P15 (-0.75, 0)
-P16 (-0.25, 0)
-P17 (-0.25, -1)
-
-Realize as seguintes transformações geométricas, utilizando matrizes, nas seguintes ordens:
-
-a) Rotação (60º), Translação (6,2) e Escala (2,3)
-
-b) Escala (2,3), Rotação (60º) e Translação (6,2)
-
-Para cada letra, gere, primeiramente, a matriz de transformação, combinando as 3 transformações, e após calcule os novos valores de cada ponto da casa. Por fim, utilize alguma ferramenta gráfica para apresentar os objetos desenhados na tela.
+3. Implemente uma aplicação que leia pelo teclado o raio de um círculo (r) e um ponto (x,y), e apresente na tela se o ponto está dentro ou fora do círculo. Considere que o ponto central do círculo está na origem.
