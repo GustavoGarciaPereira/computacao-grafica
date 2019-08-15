@@ -15,4 +15,6 @@ def algoritmo_de_Bresenham(p1,p2):
             print("@")
             y += 1
     
+    if m > 1:
+        print("")
     print("algoritmo de Bresenham")
