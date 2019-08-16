@@ -6,6 +6,11 @@ do triângulo especificado.
 Obs: caso escolha o algoritmo de Bresenham para rasterização de linhas, será concedido + 0.5 a nota.'''
 
 
+'''
+para testar:
+https://www.desmos.com/calculator
+'''
+
 import algoritmo_de_Bresenham
 
 x = 0 #int(input("X"))
