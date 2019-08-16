@@ -1,0 +1,19 @@
+13/08/2019 - Lista de exercícios - Linhas e Círculos
+
+1. Desenvolva uma aplicação em que o usuário insere os pontos referentes aos vértices de um triângulo (P0, P1 e P2), e então calcule, de acordo com um dos algoritmos de rasterização de linhas, os pontos que fazem parte das arestas do triângulo especificado.
+
+Obs: caso escolha o algoritmo de Bresenham para rasterização de linhas, será concedido + 0.5 a nota.
+
+2. Escolha um dos algoritmos de rasterização de círculos. Está aplicação deverá:
+
+    Pedir para o usuário informar o valor do raio do círculo (r);
+    Pedir para o usuário informar o ponto central do círculo;
+    A partir do raio e do ponto central, gerar os pontos (x,y) que formam o círculo e apresentar os mesmos na tela.
+
+Obs: caso escolha o algoritmo do ponto médio para rasterização de círculos, será concedido + 0.5 a nota.
+
+3. Implemente uma aplicação que leia pelo teclado o raio de um círculo (r) e um ponto (x,y), e apresente na tela se o ponto está dentro ou fora do círculo. Considere que o ponto central do círculo está na origem.
+
+
+
+Para testar graficamente, utilize o site desmos.com.
