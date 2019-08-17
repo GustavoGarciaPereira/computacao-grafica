@@ -10,19 +10,22 @@ na origem.
 def esta_dentro_circulo(px,py,x,y):
     if px >= x and py <= y:
         print("dentro")
-        return "dentro"
+        return True
 
 
 
 r = int(input("Informe o raio do círculo: "))
 px = int(input("px: "))
 py = int(input("py: "))
+flag = False
+pontos_c = []
+pon_t = ()
 
-
+pon_t = (0,r)
+pontos_c.append(pon_t)
 x = 0
 y = 0
 
-print("(0, {})".format(r))
 
 p = 1 - r
 y = r
@@ -36,26 +39,27 @@ while x < y:
         y -= 1
         p = p + 2*x - 2*y + 1 
         
-    print("({},{})\n".format(x,y))
-    esta_dentro_circulo(px,py,x,y)
+    pon_t = (x,y)
+    pontos_c.append(pon_t)
+    pon_t = (y,x)
+    pontos_c.append(pon_t)
+    pon_t = (y,-x)
+    pontos_c.append(pon_t)
+    pon_t = (y,-x)
+    pontos_c.append(pon_t)
+    pon_t = (x,-y)
+    pontos_c.append(pon_t)
+    pon_t = (-x,-y)
+    pontos_c.append(pon_t)
+    pon_t = (-y,-x)
+    pontos_c.append(pon_t)
+    pon_t = (-y,x)
+    pontos_c.append(pon_t)
+    pon_t = (-x,y)
+    pontos_c.append(pon_t)
 
-    print("({},{})\n".format(y, x))
-    esta_dentro_circulo(px,py,y,x)
-
-    print("({},{})\n".format(y, -x))
-    esta_dentro_circulo(px,py,y,-x)
-
-    print("({},{})\n".format(x, -y))
-    esta_dentro_circulo(px,py,x,-y)
-    
-    print("({},{})\n".format(-x, -y))
-    esta_dentro_circulo(px,py,-x,-y)
-
-    print("({},{})\n".format(-y, -x))
-    esta_dentro_circulo(px,py,-y,-x)
-
-    print("({},{})\n".format(-y, x))
-    esta_dentro_circulo(px,py,-y,x)
-
-    print("({},{})\n".format(-x, y))
-    esta_dentro_circulo(px,py,-x,y)
+# print(pontos_c)
+for i in pontos_c:
+    if (i[0] > px and i[1] > py) and (-i[0] < px and -i[1] < py):
+        print("({},{})".format(i[0],i[1]))
+        print("dentro")
