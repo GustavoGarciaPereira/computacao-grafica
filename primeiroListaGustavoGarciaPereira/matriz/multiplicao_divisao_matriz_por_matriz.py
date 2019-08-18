@@ -6,19 +6,12 @@ def multiplicacao(v):
     linha_re = []
     matriz_resposta = []
     num = 0
-    for i in range(len(v)):
-        vt = []
-        vt2 = []
-        vt = v[i]
-        vt2 = ma_lida[i]
-        for j in range(len(vt)):
-            num += vt[i] * vt2[j]
-            print("num", num)
-        linha_re.append(num)
-        num = 0
-        
-        matriz_resposta.append(linha_re)
-        linha_re = []
+    for linha in range(len(v)):
+       matriz_resposta.append([])
+       for colula in range(len(ma_lida[0])):
+              matriz_resposta[linha].append(0)
+              for k in range(len(v[0])):
+                    matriz_resposta[linha][colula] += v[linha][k] * ma_lida[k][colula]
     
     return matriz_resposta
 
@@ -27,18 +20,11 @@ def divisao(v):
     linha_re = []
     matriz_resposta = []
     num = 0
-    for i in range(len(v)):
-        vt = []
-        vt2 = []
-        vt = v[i]
-        vt2 = ma_lida[i]
-        for j in range(len(vt)):
-            num += vt[i] / vt2[j]
-            print("num", num)
-        linha_re.append(num)
-        num = 0
-        
-        matriz_resposta.append(linha_re)
-        linha_re = []
+    for linha in range(len(v)):
+       matriz_resposta.append([])
+       for colula in range(len(ma_lida[0])):
+              matriz_resposta[linha].append(0)
+              for k in range(len(v[0])):
+                    matriz_resposta[linha][colula] += v[linha][k] / ma_lida[k][colula]
     
     return matriz_resposta

@@ -11,8 +11,13 @@ ma2 = [[1,2,3],
        [1,2,3],
        [1,2,3]]
 
-#1* 1 + 2 * 1 + 3 * 1
+re = []
 
-for i in range(len(ma1)):
-    for j in range(len(ma2)):
-        print("{} * {}".format(ma1[i][j],ma1[i][j]))
+for linha in range(len(ma1)):
+       re.append([])
+       for colula in range(len(ma2[0])):
+              re[linha].append(0)
+              for k in range(len(ma1[0])):
+                     re[linha][colula] += ma1[linha][k] * ma1[k][colula]
+
+print(re)
