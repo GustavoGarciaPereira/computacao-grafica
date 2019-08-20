@@ -13,7 +13,7 @@ def esta_dentro_circulo(px,py,x,y):
         return True
 
 
-
+tamanho  = (px**2 + px**2) ** (1/2)
 r = int(input("Informe o raio do círculo: "))
 px = int(input("px: "))
 py = int(input("py: "))
@@ -59,7 +59,14 @@ while x < y:
     pontos_c.append(pon_t)
 
 # print(pontos_c)
-for i in pontos_c:
-    if (i[0] > px and i[1] > py) and (-i[0] < px and -i[1] < py):
-        print("({},{})".format(i[0],i[1]))
-        print("dentro")
+print(pontos_c)
+
+#print(tam)
+
+if (tamanho < r):
+    print("dentro: ({},{})".format(px,py))
+else:
+    print("fora: ({},{})".format(px,py))
+
+
+
